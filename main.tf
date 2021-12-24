@@ -5,6 +5,13 @@ terraform {
       version = "0.22.0"
     }
   }
+  cloud {
+    organization = "example-org-3e9810"
+
+    workspaces {
+      name = "snowflake-automation"
+    }
+  }
 }
 
 provider "snowflake" {
