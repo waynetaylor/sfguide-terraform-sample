@@ -25,8 +25,8 @@ resource "snowflake_database" "db" {
 }
 
 provider "snowflake" {
-        alias = "security_admin"
-        role  = "SECURITYADMIN"
+  alias = "security_admin"
+  role  = "SECURITYADMIN"
 }
 
 
