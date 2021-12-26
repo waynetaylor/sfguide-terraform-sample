@@ -17,7 +17,7 @@ terraform {
 provider "snowflake" {
   alias    = "sys_admin"
   role     = "SYSADMIN"
-  user     = var.SNOWFLAKE_USER
+  username = var.SNOWFLAKE_USER
   password = var.SNOWFLAKE_PASSWORD
   region   = var.SNOWFLAKE_REGION
   account  = var.SNOWFLAKE_ACCOUNT
@@ -29,8 +29,12 @@ resource "snowflake_database" "db" {
 }
 
 provider "snowflake" {
-  alias = "security_admin"
-  role  = "SECURITYADMIN"
+  alias    = "security_admin"
+  role     = "SECURITYADMIN"
+  username = var.SNOWFLAKE_USER
+  password = var.SNOWFLAKE_PASSWORD
+  region   = var.SNOWFLAKE_REGION
+  account  = var.SNOWFLAKE_ACCOUNT
 }
 
 
