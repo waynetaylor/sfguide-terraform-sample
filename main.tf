@@ -15,12 +15,12 @@ terraform {
 }
 
 provider "snowflake" {
-  alias = "sys_admin"
-  role  = "SYSADMIN"
-  user = var.SNOWFLAKE_USER
+  alias    = "sys_admin"
+  role     = "SYSADMIN"
+  user     = var.SNOWFLAKE_USER
   password = var.SNOWFLAKE_PASSWORD
-  region = var.SNOWFLAKE_REGION
-  account = var.SNOWFLAKE_ACCOUNT
+  region   = var.SNOWFLAKE_REGION
+  account  = var.SNOWFLAKE_ACCOUNT
 }
 
 resource "snowflake_database" "db" {

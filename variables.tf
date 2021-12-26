@@ -1,19 +1,19 @@
 variable "SNOWFLAKE_USER" {
-  type = string
+  type    = string
   default = ""
 }
 
 variable "SNOWFLAKE_ACCOUNT" {
-  type = string
+  type    = string
   default = ""
 }
 
 variable "SNOWFLAKE_REGION" {
-  type = string
+  type    = string
   default = ""
 }
 
 variable "SNOWFLAKE_PASSWORD" {
-  type = string
+  type    = string
   default = ""
 }
